@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="scroll.css">
+</head>
+<body>
+    <div class="containor">
+        <div class="left">
+            <div class="left-top">
+                <div class="mainlogo">
+                    <img src="logo.svg" alt="">
+                </div>
+                <div class="icons">
+                    <ul>
+                        <li><img src="home.svg" alt="Home"><span>Home</span></li>
+                        <li><img src="search.svg" alt="Search"><span>Search</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="laibrary">
+                <div class="header">
+                    <img src="laibrary.svg" alt="">
+                    <h2>Your Laibrary</h2>
+                </div>
+                <div id="showbar">
+                </div>
+                <div class="audio">
+                    <h4>Mega Hit Mix</h4>
+                    <audio controls id="song1" class="songs">
+                        <source src="song4.mp3" class="song">
+                    </audio>
+                    <h4>Mellow lofi....</h4>
+                    <audio controls id="song2" class="songs">
+                        <source src="song3.mp3" class="song">
+                    </audio>
+                    <h4>Rise</h4>
+                    <audio controls id="song3" class="songs">
+                        <source src="song2.mp3" class="song">
+                    </audio>
+                    <h4>Rock Classics</h4>
+                    <audio controls class="songs" id="song4">
+                        <source src="song1.mp3" class="song">
+                    </audio>
+                    <h4>Paiceful piano</h4>
+                    <audio controls id="song5">
+                        <source src="song4.mp3" class="song">
+                    </audio>
+                    <h4>Mood Booster</h4>
+                    <audio controls class="songs" id="song6">
+                        <source src="song3.mp3" class="song">
+                    </audio>
+                    <h4>Chill Hits</h4>
+                    <audio controls id="song7">
+                        <source src="song3.mp3" class="song">
+                    </audio>
+                    <!--
+                    <audio controls class="song" id="song8">
+                        <source src="song2.mp3"   class="song">
+                    </audio>
+                    <audio controls id="song9"  >
+                        <source src="song1.mp3"   class="song">
+                    </audio>
+                    <audio controls class="song" id="song10" >
+                        <source src="song2.mp3"  class="song">
+                    </audio> -->
+                </div>
+                <div class="lab-box">
+                </div>
+                <!-- <div class="footer">
+                    <a href="https://www.spotify.com/in-en/legal/"><span>Legal</span></a>
+                    <a href="https://www.spotify.com/in-en/safetyandprivacy/"><span>Safety &amp; PrivacyCenter</span></a>
+                    <a href="https://www.spotify.com/in-en/legal/privacy-policy/"><span>Privacy Policy</span></a>
+                    <a href="https://www.spotify.com/in-en/legal/cookies-policy/"><span>Cookies</span></a>
+                    <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3"><span>About Ads</span></a>
+                    <a href="https://www.spotify.com/in-en/accessibility/"><span>Accessibility</span></a>
+                    <a href="https://www.spotify.com/in-en/legal/cookies-policy/"><span>Cookies</span></a>
+                </div> -->
+            </div>
+        </div>
+        <div class="right">
+            <div class="header-right">
+                <div class="icons-d">
+                    <img src="btn1.svg" alt="btn">
+                    <img src="btn2.svg" alt="btn">
+                </div>
+                <div class="btns">
+                    <button id="btn1">Sign up</button>
+                    <span id="logininfo">
+                        <button id="btn2">Log in</button>
+                    </span>
+                </div>
+            </div>
+            <div class="playlist">
+                <h2 class="h2">Spotify Playlist</h2>
+                <div class="formbox" id="form-box">
+                    <div class="form" id="form">
+                        <form action="">
+                            <label for="name">Enter your name :</label>
+                            <input type="text" id="name"><br>
+                            <label for="email">Enter Log in ID :</label>
+                            <input type="text" id="email"><br>
+                            <label for="phone">Enter phone No :</label>
+                            <input type="number" id="phone">
+                            <button id="login-btn">Log in</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="cardcontainor">
+                    <div class="card" id="card1">
+                        <div class="playicon">
+                            <i class="ri-play-reverse-fill"></i>
+                        </div>
+                        <img src="card1.jpeg" alt="">
+                        <h2>Mega Hit mix</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, enim.</p>
+                    </div>
+                    <div class="card" id="card2">
+                        <div class="playicon">
+                            <i class="ri-play-reverse-fill"></i>
+                        </div>
+                        <img src="card2.jpeg" alt="">
+                        <h2>Mellow lofi....</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, enim.</p>
+                    </div>
+                    <div class="card" id="card3">
+                        <div class="playicon">
+                            <i class="ri-play-reverse-fill"></i>
+                        </div>
+                        <img src="card3.jpeg" alt="">
+                        <h2>Rise</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, enim.</p>
+                    </div>
+                    <div class="card" id="card4">
+                        <div class="playicon">
+                            <i class="ri-play-reverse-fill"></i>
+                        </div>
+                        <img src="card4.jpeg" alt="">
+                        <h2>Rock Classics</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, enim.</p>
+                    </div>
+                    <div class="card" id="card5">
+                        <div class="playicon">
+                            <i class="ri-play-reverse-fill"></i>
+                        </div>
+                        <img src="card5.jpeg" alt="">
+                        <h2>Paiceful piano</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, enim.</p>
+                    </div>
+                    <div class="card" id="card6">
+                        <div class="playicon">
+                            <i class="ri-play-reverse-fill"></i>
+                        </div>
+                        <img src="card6.jpeg" alt="">
+                        <h2>Mood Booster</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, enim.</p>
+                    </div>
+                    <div class="card" id="card7">
+                        <div class="playicon">
+                            <i class="ri-play-reverse-fill"></i>
+                        </div>
+                        <img src="card7.jpeg" alt="">
+                        <h2>Chill Hits</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, enim.</p>
+                    </div>
+                    <div class="card">
+                        <div class="playicon">
+                            <i class="ri-play-reverse-fill"></i>
+                        </div>
+                        <img src="card8.jpeg" alt="">
+                        <h2>Rap Caviar</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, enim.</p>
+                    </div>
+                    <div class="card">
+                        <div class="playicon">
+                            <i class="ri-play-reverse-fill"></i>
+                        </div>
+                        <img src="card9.jpeg" alt="">
+                        <h2>All Out 2010s</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, enim.</p>
+                    </div>
+                    <div class="card">
+                        <div class="playicon">
+                            <i class="ri-play-reverse-fill"></i>
+                        </div>
+                        <img src="card10.jpeg" alt="">
+                        <h2>All Out 80s</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, enim.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="playbar">
+                <div class="controls">
+                    <i class="ri-skip-back-line"></i>
+                    <i class="ri-play-circle-line"></i>
+                    <i class="ri-skip-forward-line"></i>
+                </div>
+            </div>
+            <div class="box1">
+                <div class="about">
+                    <div class="company">
+                        <h3>Company</h3>
+                        <p>About</p>
+                        <p>Jobs</p>
+                        <p>For the records</p>
+                    </div>
+                    <div class="company">
+                        <h3>Communities </h3>
+                        <p>For Artists</p>
+                        <p>Developers</p>
+                        <p>Advertising</p>
+                        <p>Investors</p>
+                        <p>Vendors</p>
+                    </div>
+                    <div class="company">
+                        <h3>Useful links</h3>
+                        <p>Support</p>
+                        <p>Free Mobile App</p>
+                    </div>
+                </div>
+                <div class="social-icons">
+                    <div class="sicons">
+                        <i class="ri-instagram-line"></i>
+                        <i class="ri-twitter-fill"></i>
+                        <i class="ri-facebook-circle-fill"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="main-footer">
+                <hr>
+                <h4>© 2024 Spotify AB</h4>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
